@@ -20,7 +20,7 @@ function App() {
     e.preventDefault();
     setStatusMsg('Submitting...');
     try {
-      const response = await fetch('http://localhost:5000/api/enquiries', {
+      const response = await fetch('https://demodb-sample.onrender.com/api/enquiries', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
